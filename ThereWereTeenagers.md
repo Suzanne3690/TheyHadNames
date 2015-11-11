@@ -14,12 +14,6 @@ The downloaded file was read into R as a dataframe
 ```r
 indata <- read.csv("AfricanNamesDatabase.csv")
 ```
-and a version made for use with the {dplyr} package. 
-
-```r
-require(dplyr)
-tbldata <- tbl_df(indata)
-```
 
 Below is shown the overall structure and content of the data:
 
@@ -44,7 +38,8 @@ First,  a quick look at where they came from and where they ended up. The variab
 
 
 ```r
-tbldata %>% count(majselpt) %>% arrange(desc(n))
+require(dplyr)
+indata %>% count(majselpt) %>% arrange(desc(n))
 ```
 
 ```
@@ -61,7 +56,7 @@ Ships embarked from 46 ports ("majbuypt"), carrying persons from 558 named count
 
 
 ```r
-tbldata %>% count(country) %>% arrange(desc(n))
+indata %>% count(country) %>% arrange(desc(n))
 ```
 
 ```
@@ -132,7 +127,7 @@ The bimodal shape of the histogram is interesting. There would appear to be a sh
  
 
 ```r
-count(tbldata, sexage)
+count(indata, sexage)
 ```
 
 ```
@@ -152,7 +147,7 @@ count(tbldata, sexage)
 
 
 ```r
-tbldata %>% filter(age < 100) %>% group_by(sexage) %>% summarise(MinAge=min(age, na.rm=FALSE), MaxAge=max(age, na.rm=FALSE))
+indata %>% filter(age < 100) %>% group_by(sexage) %>% summarise(MinAge=min(age, na.rm=FALSE), MaxAge=max(age, na.rm=FALSE))
 ```
 
 ```
@@ -196,8 +191,8 @@ Finally, recode sexage as a binary (female/male) factor and examine the age dist
 
 ```r
 indata$gender <- as.character(indata$sexage)
-indata$gender[indata$gender == "Girl" | indata$gender == "Woman" | indata$gender == "Female"] <- "female"
-indata$gender[indata$gender == "Boy" | indata$gender == "Man" | indata$gender == "Male"] <- "male"
+indata$gender[indata$gender %in%  c("Girl", "Woman", "Female")] <- "female"
+indata$gender[indata$gender %in% c("Boy", "Man", "Male")] <- "male"
 indata$gender[indata$gender == ""] <- NA
 qplot(age, data = subset(indata, age < 100 & !is.na(gender)), binwidth = 1) + facet_wrap(~gender)
 ```
