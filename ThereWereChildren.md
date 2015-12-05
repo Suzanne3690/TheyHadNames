@@ -357,7 +357,7 @@ table(v$age, as.character(v$sexage))
 ##   15      0    2
 ```
 
-In an earlier study, [There Were Teenagers](www.github.com/Suzanne3690/TheyHadNames/ThereWereTeenagers.md), I discovered a possible downward bias in reporting ages of teenagers, especially of females - so we shouldn't necessarily conclude that there were no girls aged 9-15 on this voyage. However, I am going to guess that the following girls would have been amongst the oldest of the adolescent females - and may have felt compelled to look after others - even when their own predicament looked hopeless ...
+In an earlier study, [There Were Teenagers](https://github.com/Suzanne3690/TheyHadNames/blob/master/ThereWereTeenagers.md), I discovered a possible downward bias in reporting ages of teenagers, especially of females - so we shouldn't necessarily conclude that there were no girls aged 9-15 on this voyage. However, I am going to guess that the following girls would have been amongst the oldest of the adolescent females - and may have felt compelled to look after others - even when their own predicament looked hopeless ...
 
 
 ```r
