@@ -4,10 +4,15 @@ November 1, 2015
 
 
 
-The [Trans-Atlantic Slave Trade Database](http://www.slavevoyages.org/tast/index.faces) has 
+The [Trans-Atlantic Slave Trade Database](http://www.slavevoyages.org) has 
 information on more than 35,000 slave voyages. An interactive interface allows researchers to create listings, tables, charts, and maps using information from the database. 
 
-Available [data downloads](http://www.slavevoyages.org/tast/database/download.faces) include a subset of the [African Names Database](http://www.slavevoyages.org/tast/resources/slaves.faces) which identifies 67,460 Africans taken from captured slave ships or from African trading sites from 1819 to 1845. Reported here is a finding from an exploratory study of this data set.
+Available [data downloads](http://www.slavevoyages.org/voyage/download) include a subset of the [African Names Database](http://www.slavevoyages.org/resources/names-database) which identifies 67,460 Africans taken from captured slave ships or from African trading sites from 1819 to 1845. 
+
+
+Reported here is a finding from an exploratory study of this data set, focussing primarily on the ages of subjects.  
+
+###Data  
 
 The downloaded file was read into R as a dataframe 
 
