@@ -72,7 +72,7 @@ offspring$name[1:20]
 ## [17] "Ajaiay's infant (10mths)"   "Ahjarme's child"            "Ahkenhaybay's child"        "Ego's child (11mths)"
 ```
 
-Only the first 20 names of 270 offspring are shown. The full list of names is given in [Appendix A][]. The above strings are stripped of unwanted characters, leaving the name of the mother:  
+Only the first 20 names of 270 offspring are shown. The full list of names is given in ![Appendix A][]. The above strings are stripped of unwanted characters, leaving the name of the mother:  
 
 
 ```r
@@ -86,7 +86,7 @@ offspring$mothername[1:20]
 ## [17] "Ajaiay"      "Ahjarme"     "Ahkenhaybay" "Ego"
 ```
     
-The full list is given in [Appendix B][].   
+The full list is given in ![Appendix B][].   
   
   
     
@@ -196,7 +196,7 @@ vdata <- indata[,c("voyageId","shipname","datearr","majbuypt")]
 ```
   
   
-Here is the list for voyage 2977. (The complete list is given in [Appendix C][])  
+Here is the list for voyage 2977. (The complete list is given in ![Appendix C][])  
   
 
 ```r
