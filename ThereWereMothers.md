@@ -393,8 +393,9 @@ indata[indata$id==36558,]
   
 
 
-
-###Appendix A  
+<a name "appendix a">
+### Appendix A  
+</a>
 #### Identified offpsring  
 
 ```
@@ -490,8 +491,9 @@ indata[indata$id==36558,]
 ## [268] "Choo (Infant)"                 "Amba's child"                  "Tallahmee's child"
 ```
 
-
+<a name = "appendix b">
 ###Appendix B   
+</a>
 #### Mother names  
 
 ```
@@ -536,8 +538,9 @@ indata[indata$id==36558,]
 ## [267] "Yawahtoo"     "Yebonday"     "Zarrah"       "Zovoh"
 ```
 
-  
+<a name = "appendix c">  
 ###Appendix C  
+</a>
 #### Voyages with child-mother matches  
 
 ```
