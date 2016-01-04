@@ -196,7 +196,7 @@ vdata <- indata[,c("voyageId","shipname","datearr","majbuypt")]
 ```
   
   
-Here is the list for voyage 2977. (The complete list is given in [Appendix C](#appc)  
+Here is the list for voyage 2977. (The complete list is given in [Appendix C](#appc)) 
   
 
 ```r
